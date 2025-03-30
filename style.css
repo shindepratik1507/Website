@@ -1,5 +1,6 @@
 /* Google Font Import */
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Khand:wght@600&display=swap');
 
 body {
   font-family: 'Poppins', sans-serif;
@@ -48,19 +49,11 @@ body {
   }
 }
 
-@font-face {
-  font-family: 'Infinity-16';
-  src: url('Infinity-16.woff2') format('woff2'),
-       url('Infinity-16.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
 /* Main Heading */
 .family-name {
   font-size: 37px;
   color: #c70039;
-  font-family: 'Infinity-16';
+  font-family: 'Dancing Script', cursive;
   margin-bottom: -3px;
 }
 
@@ -68,7 +61,7 @@ body {
 .wedding-heading {
   font-size: 36px;
   color: #ff7f50;
-  font-family: 'Khand-semibold';
+  font-family: 'Khand', sans-serif;
   font-weight: bold;
   margin-bottom: 20px;
 }
