@@ -1,120 +1,139 @@
-/* âœ… Body styling with background image */
+/* Google Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Poppins:wght@400;600&display=swap');
+
 body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-image: url('bg1.jpg');
-    backdrop-filter: blur(10px);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+  font-family: 'Poppins', sans-serif;
+  background-color: #fffaf5;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url('https://source.unsplash.com/1600x900/?wedding');
+  background-size: cover;
+  background-position: center;
 }
 
-/* âœ… Calculator container styling with blur */
-.calculator {
-    background-color: rgba(255, 255, 255, 0.2);
-    padding: 17px;
-    border-radius: 28px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    backdrop-filter: blur(15px);
-    -webkit-backdrop-filter: blur(15px);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.container {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  max-width: 500px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
 }
 
-/* âœ… Heading styling */
-.heading {
-    font-family: Khand;
-      /* ✅ Gradient effect */
-    background: linear-gradient(180deg, #ffffff,#ffffff, #0056b3); 
-    -webkit-background-clip: text; /* Clip the gradient to the text */
-    -webkit-text-fill-color: transparent; /* Make text color transparent */
-    font-size: 50px;
-    margin-bottom: 15px;
-    text-align: center;
-    text-shadow: 0px 0px px rgba(0, 0, 0, 0.5);
+/* Loop Graphics */
+.loop-graphic {
+  position: absolute;
+  top: -50px;
+  left: -50px;
+  width: 150px;
+  height: 150px;
+  background: rgba(255, 182, 193, 0.3);
+  border-radius: 50%;
+  z-index: -1;
+  animation: loop 6s infinite linear;
 }
 
-/* âœ… Display styling */
-#display {
-    width: 94%;
-    height: 33px;
-    text-align: right;
-    margin-bottom: 15px;
+@keyframes loop {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Main Heading */
+.family-name {
+  font-size: 37px;
+  color: #c70039;
+  font-family: 'Infinity-16';
+  margin-bottom: -3px;
+}
+
+/* Wedding Heading */
+.wedding-heading {
+  font-size: 36px;
+  color: #ff7f50;
+  font-family: 'Khand semibold';
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.heart {
+  color: #e91e63;
+  animation: heartbeat 1.2s infinite;
+}
+
+@keyframes heartbeat {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Details Section */
+.details, .haldi {
+  background-color: #fff0f5;
+  padding: 15px;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  border: 2px solid #ffc0cb;
+}
+
+.details p, .haldi p {
+  margin: 5px 0;
+  color: #555;
+}
+
+/* Date & Time */
+.date-time {
+  font-size: 18px;
+  color: #d84315;
+}
+
+/* Inviting Section */
+.inviting-by {
+  margin-top: 20px;
+}
+
+.inviting-by h3 {
+  font-size: 22px;
+  color: #ff7f50;
+  margin-bottom: 8px;
+}
+
+.inviting-by p {
+  font-size: 18px;
+  color: #555;
+  margin: 2px;
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+  .container {
+    padding: 20px;
+  }
+
+  .family-name {
     font-size: 24px;
-    border: 1px solid #ccc;
-    border-radius: 28px;
-    padding: 10px;
-    background-color: #fafafa;
-    color: #333;
-    cursor: pointer;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: background-color 0.2s ease,transform 0.1s ease;
+  }
 
-}
+  .wedding-heading {
+    font-size: 28px;
+  }
 
-/* âœ… Button container styling */
-.buttons {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
-}
-
-/* âœ… Button styling */
-button {
-    padding: 15px;
-    font-size: 19px;
-    border: 2px solid #007bff;
-    border-radius: 30px;
-    background-color: #007bff;
-    color: white;
-    cursor: pointer;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: background-color 0.2s ease, transform 0.1s ease;
-}
-
-button:hover {
-    background-color: #0056b3;
-    border-color: #0056b3;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-}
-
-button:active {
-    transform: scale(0.95);
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-}
-
-/* âœ… History container styling */
-.history-container {
-    width: 100%;
-    margin-top: 20px;
-    padding: 3px;
-    background-color: rgba(255, 255, 255, 0.3);
-    border-radius: 32px;
-    backdrop-filter: blur(10px);
-    max-height: 200px;
-    overflow-y: auto;
-    display: none;
-}
-
-.history-container h2 {
-    color: #333;
-    font-size: 19px;
-    margin-bottom: -18px;
-    padding: 17px;
-    
-}
-
-#history-list {
-    list-style-type: none;
-    padding: 13px;
-}
-
-#history-list li {
-    padding: 5px;
-    border-bottom: 1px solid #ccc;
-    color: #000;
+  .date-time, .details p, .haldi p, .inviting-by p {
+    font-size: 16px;
+  }
 }
