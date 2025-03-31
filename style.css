@@ -39,7 +39,6 @@ img {
   border-radius: 8px;
 }
 
-
 /* Wedding Heading */
 .wedding-heading {
   font-size: 26px;
@@ -84,6 +83,28 @@ iframe {
 .inviting-by p {
   font-size: 16px;
   color: #a30000;
+  font-weight: bold;
+}
+
+/* Contact Section */
+.Contact {
+  background: #a85069;
+  padding: 10px;
+  border-radius: 25px;
+  text-align: center;
+  margin-top: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.Contact p {
+  font-size: 16px;
+  color: white;
+  font-weight: bold;
+}
+
+.Contact a {
+  color: white;
+  text-decoration: none;
   font-weight: bold;
 }
 
