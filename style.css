@@ -1,23 +1,38 @@
 /* Google Font Import */
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Poppins:wght@400;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Khand:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Khand:wght@400;600&family=Khand:wght@600&display=swap');
+
 
 body {
-  font-family: 'Poppins', sans-serif;
-  background-color: #fffaf5;
+  font-family: 'Khand', sans-serif;
   margin: 0;
   padding: 0;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-image: url('https://source.unsplash.com/1600x900/?wedding');
+  background-image: url('bg1.jpg');
   background-size: cover;
   background-position: center;
 }
 
+/* Wedding Image */
+.wedding-image {
+  width: 100%;
+  max-width: 600px;
+  display: block;
+  margin: 20px auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
 .container {
-  background-color: rgba(255, 255, 255, 0.9);
+  background: linear-gradient(to bottom, #ffffff, #fffef9);
+ /* Adjust transparency */
+  background-image: url('bg2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   padding: 30px;
   border-radius: 20px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
@@ -26,6 +41,7 @@ body {
   position: relative;
   overflow: hidden;
 }
+
 
 /* Loop Graphics */
 .loop-graphic {
@@ -49,11 +65,11 @@ body {
   }
 }
 
-/* Main Heading */
+/* Family Name */
 .family-name {
   font-size: 37px;
   color: #c70039;
-  font-family: 'Infinity-16',sans-serif;
+  font-family: 'Khand-Semibold', sans-serif;
   margin-bottom: -3px;
 }
 
@@ -61,11 +77,12 @@ body {
 .wedding-heading {
   font-size: 36px;
   color: #ff7f50;
-  font-family: 'Khand', sans-serif;
+  font-family: 'Khand-Semibold', sans-serif;
   font-weight: bold;
   margin-bottom: 20px;
 }
 
+/* Heart Animation */
 .heart {
   color: #e91e63;
   animation: heartbeat 1.2s infinite;
@@ -85,22 +102,29 @@ body {
 
 /* Details Section */
 .details, .haldi {
-  background-color: #fff0f5;
+  background-color: #ffffff;
   padding: 15px;
   border-radius: 12px;
   margin-bottom: 15px;
-  border: 2px solid #ffc0cb;
+  border: 2px solid #ff002d;
+}
+
+.details h3, .haldi h3 {
+  font-size: 22px;
+  color: #d84315;
+  margin-bottom: 8px;
 }
 
 .details p, .haldi p {
   margin: 5px 0;
-  color: #555;
+  color: #b05a45;
 }
 
 /* Date & Time */
 .date-time {
   font-size: 18px;
   color: #d84315;
+  font-weight: bold;
 }
 
 /* Inviting Section */
@@ -115,9 +139,11 @@ body {
 }
 
 .inviting-by p {
-  font-size: 18px;
-  color: #555;
+  font-size: 22px;
+  color: #a30000;
   margin: 2px;
+  font-weight:bold;
+  text-align: middle;
 }
 
 /* Responsive Design */
