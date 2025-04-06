@@ -34,7 +34,6 @@ body {
 img {
   max-width: 100%;
   height: auto;
-  display: block;
   margin: auto;
   border-radius: 8px;
 }
@@ -120,4 +119,53 @@ iframe {
   .date-time, .details p, .haldi p, .inviting-by p {
     font-size: 14px;
   }
+}
+
+
+.sidebar-toggle {
+  position: fixed;
+  top: 4px;
+  left: 10px;
+  background: #ff7f50;
+  color: #fff;
+  font-size: 24px;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  z-index: 1001;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -240px;
+  width: 200px;
+  height: 100%;
+  background: #fff;
+  box-shadow: 2px 0 8px rgba(0,0,0,0.2);
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  z-index: 1000;
+  transition: left 0.3s ease;
+}
+
+.sidebar.open {
+  left: 0;
+}
+
+.sidebar a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #c70039;
+  font-weight: bold;
+}
+
+.close-btn {
+  align-self: flex-end;
+  background: none;
+  font-size: 24px;
+  border: none;
+  color: #c70039;
 }
