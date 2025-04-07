@@ -206,3 +206,58 @@ iframe {
 .social-links a:hover {
   background: #a0002d;
 }
+
+/* Button Style */
+.custom-button {
+  background-color: #ffd0dd;
+  color: #a85069;
+  padding: 4px 25px;
+  border: none;
+  border-radius: 32px;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin: 15px auto;
+  display: block;
+  text-align: center;
+  max-width: 207px;
+}
+
+/* Hover Effect */
+.custom-button:hover {
+  background-color: #a0002d;
+}
+
+/* Image Styling */
+.gallery-image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 12px;
+  border-radius: 12px;
+  display: block;
+  object-fit: cover;
+}
+
+/* Container Alignment */
+.container {
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .custom-button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .container {
+    padding: 15px;
+  }
+}
+
