@@ -261,3 +261,13 @@ iframe {
   }
 }
 
+/* video css */
+video {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin-bottom: 7px;
+    border: 2px solid #ff002d;
+}
+
+
