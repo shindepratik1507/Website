@@ -271,3 +271,30 @@ video {
 }
 
 
+
+/* photo add */
+.container {
+  text-align: center;
+  padding: 20px;
+}
+
+#wedding-heading {
+  font-size: 2em;
+  color: #fff;
+  text-shadow: 2px 2px 5px #000;
+  margin-bottom: 20px;
+}
+
+#photo-gallery {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center;     /* Center items horizontally */
+  gap: 20px;               /* Space between images */
+}
+
+#photo-gallery img {
+  /*width: 300px;             Adjust size as needed */
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
