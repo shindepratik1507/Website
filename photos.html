@@ -17,12 +17,32 @@
     <a href="about.html">ABOUT</a>
   </div>
 
+
+
+
   <div class="container">
-    <h2 class="wedding-heading">PHOTOS</h2>
-    <img src="Photos/1.JPG" alt="Pre-Wedding Photo" />
-    <img src="Photos/2.JPG" alt="Pre-Wedding Photo" />
-    <img src="Photos/3.JPG" alt="Pre-Wedding Photo" />
-  </div>
+  <h2 class="wedding-heading">PHOTOS</h2>
+  <div id="photo-gallery"></div>
+</div>
+
+<script>
+  const gallery = document.getElementById("photo-gallery");
+
+  // Assume you have 10 images named 1.JPG to 10.JPG
+  const totalImages = 11;
+
+  for (let i = 1; i <= totalImages; i++) {
+    const img = document.createElement("img");
+    img.src = `Photos/${i}.JPG`;
+    img.alt = `Pre-Wedding Photo ${i}`;
+    /* img.style.width = "200px";  // Add styling as needed */
+    img.style.margin = "10px";
+    img.style.borderRadius = "10px";
+    img.style.boxShadow = "0 4px 10px rgba(0,0,0,0.3)";
+    gallery.appendChild(img);
+  }
+</script>
+
 
   <script src="script.js"></script>
 </body>
